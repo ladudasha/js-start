@@ -1,0 +1,106 @@
+<input type="text" value="hello">
+
+
+<h1>заголовок</h1>
+
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+
+
+
+
+
+<script>
+    window.alert('number 1');
+    window.alert('number 2');
+
+    // /обьект
+    let user = {
+        name: 'Dasha',
+        age: 18,
+        // можно вкладывать обьект в обьект
+        children: {
+            sun1: "Gleb",
+            sun2: "Leo"
+
+        }
+    }
+    // добавить свойство в обьект
+    user.city = "Minsk"
+    // изменить свойство
+    user.name = "Masha"
+    // удалить свойство
+    delete user.city
+    console.log(user)
+
+
+    // МАССИВЫ упорядоченные данные одного типа (индекс с 0)
+
+
+
+    let fruit = ["Apple", "Pear", "Melon"]
+    console.log(fruit[1])
+
+    // длина массива (сколько элементов всего)
+    console.log(fruit.length)
+    // получить индекс последнего элемента 
+    console.log(fruit.length - 1)
+    //  добавить элемент в конец массива
+    fruit.push("Kiwi")
+    //  удалить последний элемент массива 
+    fruit.pop()
+    //  добавить элемент в начало массива
+    fruit.unshift("Kiwi")
+    console.log(fruit)
+
+
+
+    // ФУНКЦИИ
+    function showMessage() {
+        console.log("hello")
+    }
+
+    showMessage()
+
+
+
+    // или вызывать одну и ту же функцию с разным сообщением когда ее будут вызывать
+    function showMessage(message) {
+        console.log(message)
+    }
+
+    showMessage("hi")
+    showMessage("ho")
+    showMessage("ha")
+
+
+    // ЦИКЛЫ
+
+    let i = 0
+    // условие 0 < 5
+    while (i < 5) {
+        console.log(i);
+        i++
+    }
+
+    // или
+
+    for (let i = 0; i <= 5; i++) {
+        console.log(i);
+    }
+
+    // для массива цикл
+
+    let fruits = ["Aple", "Orange", "Pear"]
+
+    for (let i = 0; i <= fruits.length-1; i++) {
+        console.log(fruits[i]);
+    }
+
+
+
+</script>
