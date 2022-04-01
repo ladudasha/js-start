@@ -121,12 +121,111 @@
     }
 
     // можно обьединять
-    let login = "fgshnsht";
+    let login = "";
     let userName = "Sveta";
     let age = 18;
     if ((login || userName === 'Sveta') && age == 18) {
-        console.log("lalalal")
+        console.log("работает")
     }
+
+    let card = true;
+
+    console.log(card ? 'the discont is 10$' : 'the discont is 2$')
+
+    // INCUBATOR 15 УРОК
+
+    let admin = 'Джон';
+    let name = 'Джон';
+
+    console.log(admin)
+
+    // 5. Создайте объект house который будет иметь два свойства city и address. С любыми значениями.
+    let house = {
+        city: 'Minsk',
+        address: 'Green street',
+    }
+    // 6. Выведите в консоль по очереди сначала значение city, потом address данного объекта
+    console.log(house.city)
+    console.log(house.address)
+
+
+    // 7. Создайте пустой объект userNew.
+    // 8. Добавьте свойство name со значением John.
+    // 9. Добавьте свойство surname со значением Smith.
+    let userNew = {
+        name: 'John',
+        surname: 'Smith',
+
+    }
+    // 10. Измените значение свойства name на Pete.
+    userNew.name = 'Pete'
+    console.log(userNew)
+    // 11. Удалите свойство name из объекта.
+    delete userNew.name
+    console.log(userNew)
+
+
+    // 12. Создайте массив styles с элементами «Джаз» и «Блюз».
+
+
+    let styles = ["Джаз", "Блюз"]
+
+    styles.push("Рок-н-ролл")
+    // 14. Замените значение в середине на «Классика». Ваш код для поиска значения в середине должен
+    // работать для массивов с любой длиной.
+    styles[1] = "Классика";
+    // 15. Удалите первый элемент массива и покажите его.
+    styles.shift()
+    // 16. Вставьте «Рэп» и «Регги» в начало массива.
+    styles.unshift('Рэп', 'Регги')
+
+    console.log(styles)
+    // 17. Перепишите конструкцию if с использованием условного оператора '?':
+    // let result;
+    // if (a + b < 4) {
+    // result = 'Мало';
+    // } else {
+    // result = 'Много';
+    // }
+
+    let result = 4;
+
+    console.log(1 + 5 < 4 ? 'Мало' : 'Много')
+
+    // 18. Перепишите if..else с использованием нескольких операторов '?';.
+    // Для читаемости рекомендуется разбить код на несколько строк.
+    // let message;
+    // if (login == 'Сотрудник';) {
+    // message ='Привет';
+    // } else if (login == 'Директор') {
+    // message = 'Здравствуйте';
+    // } else if (login == '') {
+    // message = 'Нет логина';
+    // } else {
+    // message = '';
+    // }
+
+
+    login = 'Сотрудник';
+
+    let message = (login == 'Сотрудник') ? 'Привет' :
+        (login == 'Директор') ? 'Здравствуйте' :
+            (login == '') ? 'Нет логина' :
+                '';
+
+    console.log(message);
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
