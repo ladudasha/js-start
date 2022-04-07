@@ -3,13 +3,25 @@
 
 <h1>заголовок</h1>
 
-<input type="text" value="test-value" class="" id="hello-message">
+<input type="text" value="test-value" class="test-className" id="hello-message">
 
 <ul>
     <li></li>
     <li></li>
     <li></li>
 </ul>
+
+
+<input value="Darya" class="first-name" id="first-name">
+<input value="Ladudo" class="last-name" id="last-name">
+<input value="Senica" class="address" id="address">
+
+<select id="cities">
+    <option id="Kiev" class="cities-first">Kiev</option>
+    <option id="Minsk" selected="selected" class="sities-second">Minsk</option>
+    <option id="Moscow" class="s ities-three">Moscow</option>
+</select>
+
 
 
 
@@ -40,7 +52,28 @@
     helloMessageElement = document.getElementById(helloMessageId);
 
     window.alert(helloMessageElement.value);
+    window.alert(helloMessageElement.className);
 
+// видео 8 часть 2 разбор ДЗ
+
+var firstNameId = 'first-name';
+var lastNameId = 'last-name';
+var addressId = 'address';
+var citiesId = 'cities';
+
+var firstNameEl = document.getElementById(firstNameId);
+var lastNameEl = document.getElementById(lastNameId);
+var addressEl = document.getElementById(addressId);
+var citiesEl = document.getElementById(citiesId);
+
+
+
+
+window.alert(firstNameEl.value);
+window.alert(firstNameEl.className);
+window.alert(lastNameEl.value);
+window.alert(addressEl.value);
+window.alert(citiesEl.value);
 
 
 
