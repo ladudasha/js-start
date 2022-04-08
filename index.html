@@ -23,7 +23,12 @@
 </select>
 
 
+<textarea id="hobbies">js, html,css</textarea>
 
+
+<div id="avatar">
+    <img id="img-avatar" src="https://sun1.beltelecom-by-minsk.userapi.com/s/v1/if2/BzWU1U1ppbww2lLdzAcXNuWFAlqV1sdapSTLN7hckzN1g28J5WMUUvjZlBArf6zOdUdR5JA8u5Y5BoFeeDpItIVz.jpg?size=200x200&quality=96&crop=0,0,2048,2048&ava=1" alt="avatar">
+</div>
 
 
 
@@ -36,23 +41,23 @@
     // 1
     var str1 = 'number 1';
 
-    window.alert(str1);
-    window.alert('number 2');
+    console.log(str1);
+    console.log('number 2');
 
     // 2
     var wordCat = 'Cat';
     var translateWordCat = 'Кот';
 
-    window.alert(wordCat);
-    window.alert(translateWordCat);
+    console.log(wordCat);
+    console.log(translateWordCat);
 
     // 3
     var helloMessageId = 'hello-message';
 
     helloMessageElement = document.getElementById(helloMessageId);
 
-    window.alert(helloMessageElement.value);
-    window.alert(helloMessageElement.className);
+    console.log(helloMessageElement.value);
+    console.log(helloMessageElement.className);
 
 // видео 8 часть 2 разбор ДЗ
 
@@ -61,21 +66,28 @@ var lastNameId = 'last-name';
 var addressId = 'address';
 var citiesId = 'cities';
 
+
 var firstNameEl = document.getElementById(firstNameId);
 var lastNameEl = document.getElementById(lastNameId);
 var addressEl = document.getElementById(addressId);
 var citiesEl = document.getElementById(citiesId);
+// var hobbiesEl = document.getElementById('hobbies');
+var avatarEl = document.getElementById('avatar');
+var imgAvatarEl = document.getElementById('img-avatar');
+
+console.log(firstNameEl.value);
+console.log(firstNameEl.className);
+console.log(lastNameEl.value);
+console.log(addressEl.value);
+console.log(citiesEl.value);
+console.log(document.getElementById('hobbies').value);
+console.log(avatarEl.innerHTML);
+console.log(imgAvatarEl.alt);
+
+firstNameEl.value = "Dashulja"
 
 
-
-
-window.alert(firstNameEl.value);
-window.alert(firstNameEl.className);
-window.alert(lastNameEl.value);
-window.alert(addressEl.value);
-window.alert(citiesEl.value);
-
-
+// Урок 9
 
     // /обьект
     let user = {
