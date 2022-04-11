@@ -27,7 +27,9 @@
 
 
 <div id="avatar">
-    <img id="img-avatar" src="https://sun1.beltelecom-by-minsk.userapi.com/s/v1/if2/BzWU1U1ppbww2lLdzAcXNuWFAlqV1sdapSTLN7hckzN1g28J5WMUUvjZlBArf6zOdUdR5JA8u5Y5BoFeeDpItIVz.jpg?size=200x200&quality=96&crop=0,0,2048,2048&ava=1" alt="avatar">
+    <img id="img-avatar"
+        src="https://sun1.beltelecom-by-minsk.userapi.com/s/v1/if2/BzWU1U1ppbww2lLdzAcXNuWFAlqV1sdapSTLN7hckzN1g28J5WMUUvjZlBArf6zOdUdR5JA8u5Y5BoFeeDpItIVz.jpg?size=200x200&quality=96&crop=0,0,2048,2048&ava=1"
+        alt="avatar">
 </div>
 
 
@@ -59,49 +61,53 @@
     console.log(helloMessageElement.value);
     console.log(helloMessageElement.className);
 
-// видео 8 часть 2 разбор ДЗ
+    // видео 8 часть 2 разбор ДЗ
 
-var firstNameId = 'first-name';
-var lastNameId = 'last-name';
-var addressId = 'address';
-var citiesId = 'cities';
-
-
-var firstNameEl = document.getElementById(firstNameId);
-var lastNameEl = document.getElementById(lastNameId);
-var addressEl = document.getElementById(addressId);
-var citiesEl = document.getElementById(citiesId);
-// var hobbiesEl = document.getElementById('hobbies');
-var avatarEl = document.getElementById('avatar');
-var imgAvatarEl = document.getElementById('img-avatar');
-
-console.log(firstNameEl.value);
-console.log(firstNameEl.className);
-console.log(lastNameEl.value);
-console.log(addressEl.value);
-console.log(citiesEl.value);
-console.log(document.getElementById('hobbies').value);
-console.log(avatarEl.innerHTML);
-console.log(imgAvatarEl.alt);
-
-firstNameEl.value = 'Dashulja';
+    var firstNameId = 'first-name';
+    var lastNameId = 'last-name';
+    var addressId = 'address';
+    var citiesId = 'cities';
 
 
-// Урок 9
+    var firstNameEl = document.getElementById(firstNameId);
+    var lastNameEl = document.getElementById(lastNameId);
+    var addressEl = document.getElementById(addressId);
+    var citiesEl = document.getElementById(citiesId);
+    var hobbiesEl = document.getElementById('hobbies');
+    var avatarEl = document.getElementById('avatar');
+    var imgAvatarEl = document.getElementById('img-avatar');
 
-console.log(lastNameEl.className);
+    console.log(firstNameEl.value);
+    console.log(firstNameEl.className);
+    console.log(lastNameEl.value);
+    console.log(addressEl.value);
+    console.log(citiesEl.value);
+    console.log(hobbiesEl);
+    console.log(avatarEl.innerHTML);
+    console.log(imgAvatarEl.alt);
 
-lastNameEl.className = 'last-name arror-input';
-imgAvatarEl.src = 'https://sun9-5.userapi.com/impf/o1ZGsRVIcqlJvAGytIOV-1ekq1H9DCJWrTz0kA/NubWxIBNjII.jpg?size=1440x1800&quality=96&sign=23ec6ce008969dba6b4e1fd09cfbe09f&type=album'
+    firstNameEl.value = 'Dashulja';
+
+
+    // Урок 9
+
+    console.log(lastNameEl.className);
+
+    lastNameEl.className = 'last-name arror-input';
+    imgAvatarEl.src = 'https://new-img.movavi.com/pages/0012/17/f4fe12fa6f7f081f686b4a82fb27f25b82f96c78.webp'
+
+    imgAvatarEl.title = 'i am avatar';
+    lastNameEl.title = 'wrong last name';
+    citiesEl.value = 'Moscow';
+    hobbiesEl.value = 'i do not have hobbies';
+    avatarEl.innerHTML = 'изменить инер'
 
 
 
 
 
 
-
-
-// теория
+    // теория
     // /обьект
     let user = {
         name: 'Dasha',
@@ -308,6 +314,7 @@ imgAvatarEl.src = 'https://sun9-5.userapi.com/impf/o1ZGsRVIcqlJvAGytIOV-1ekq1H9D
         border: green 3px solid;
         padding: 5px;
     }
+
     .arror-input {
         border: red 3px solid;
     }
