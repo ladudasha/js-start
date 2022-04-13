@@ -96,7 +96,7 @@ alertValue(addressEl);
 
 var citiesId = 'cities';
 var citiesEl = document.getElementById(citiesId);
-alertValue(citiesId);
+alertValue(citiesEl);
 
 
 
